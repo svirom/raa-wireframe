@@ -42,3 +42,26 @@
 	-o-transition: $object $time ease;
 	transition: $object $time ease;
 }
+
+@mixin placeholder {
+  &::-webkit-input-placeholder {
+    @content;
+  }
+  &::-moz-placeholder{
+    @content;
+  }
+  &:-ms-input-placeholder{
+    @content;
+  }
+  &:-moz-placeholder {
+    @content;
+  }
+}
+
+@mixin transform($argument) {
+  -webkit-transform: $argument; 
+     -moz-transform: $argument;
+		  -ms-transform: $argument; 
+		      transform: $argument;
+}
+

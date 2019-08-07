@@ -4,12 +4,6 @@
   box-sizing: border-box;
 }
 
-*,
-*::before,
-*::after {
-  box-sizing: inherit;
-}
-
 body {
   margin: 0;
   border: 0;
@@ -172,24 +166,125 @@ h2 {
   top: 18px;
 }
 
+.nav-opener.nav-active {
+  height: 28px;
+}
+
+.nav-opener.nav-active span {
+  opacity: 0;
+}
+
+.nav-opener.nav-active:before {
+  top: 12px;
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.nav-opener.nav-active:after {
+  top: 12px;
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+
+.main-nav {
+  position: absolute;
+  width: 100%;
+  padding-bottom: 24px;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.main-nav .nav {
+  display: none;
+}
+
 .search-form {
+  display: none;
   position: relative;
 }
 
 .search-form input {
   width: 100%;
-  padding: 12px 0 0 72px;
+  padding: 26px 0 26px 72px;
   border: 0;
+  font-size: 20px;
   background: #F5F7F8;
 }
 
-.search-form input::-webkit-input-placeholder, .search-form input::-moz-placeholder, .search-form input:-ms-input-placeholder, .search-form input:-moz-placeholder {
-  color: red;
+.search-form input::-webkit-input-placeholder {
+  font-size: 20px;
+  color: #BFBFBF;
+  line-height: 3;
+}
+
+.search-form input::-moz-placeholder {
+  font-size: 20px;
+  color: #BFBFBF;
+  line-height: 3;
+}
+
+.search-form input:-ms-input-placeholder {
+  font-size: 20px;
+  color: #BFBFBF;
+  line-height: 3;
+}
+
+.search-form input:-moz-placeholder {
+  font-size: 20px;
+  color: #BFBFBF;
+  line-height: 3;
 }
 
 .search-form button {
   position: absolute;
-  top: 0;
+  top: 50%;
+  left: 26px;
+  padding: 6px;
+  border: 0;
+  background: transparent;
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+.search-form button img {
+  vertical-align: middle;
+}
+
+.nav {
+  padding-top: 12px;
+}
+
+.nav .nav-link {
+  text-align: center;
+}
+
+.nav .nav-link a {
+  display: block;
+  padding: 12px 0;
+  font-size: 18px;
+}
+
+.member-login {
+  display: none;
+  padding: 30px 0;
+  text-align: center;
+}
+
+.login-button {
+  display: inline-block;
+  padding: 18px 64px;
+  font-size: 18px;
+  color: #ffffff;
+  border-radius: 30px;
+  background: #405065;
 }
 
 /*# sourceMappingURL=main.css.map */
