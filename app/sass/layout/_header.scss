@@ -1,3 +1,13 @@
 // -----------------------------------------------------------------------------
 // This file contains all styles related to the header of the site/application.
 // -----------------------------------------------------------------------------
+
+.logo {
+  display: inline-block;
+  margin: 33px 0 33px 30px;
+  a {
+    display: inline-block;
+    line-height: 0;
+    vertical-align: middle;
+  }
+}

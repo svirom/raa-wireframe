@@ -30,3 +30,15 @@
   }
 }
 
+@mixin font($size, $weight, $lineHeight) {
+	font-size: $size;
+	font-weight: $weight;
+	line-height: $lineHeight;
+}
+
+@mixin transition($object, $time) {
+	-webkit-transition: $object $time ease;
+	-moz-transition: $object $time ease;
+	-o-transition: $object $time ease;
+	transition: $object $time ease;
+}

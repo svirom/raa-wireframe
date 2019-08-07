@@ -2,10 +2,23 @@
  * Basic typography style for copy text
  */
 body {
-  color: $text-color;
-  font: normal 125% / 1.4 $text-font-stack;
+  color: $textColor;
+  font: normal #{$basicFontSize} / 1.4 $primaryFont;
+  -webkit-text-size-adjust: 100%; 
+  -ms-text-size-adjust: 100%;
 }
 
 h1 {
-  font-size: 1rem;
+  @include font(35px, 600, 50px);
+  color: $headingColor; 
+}
+
+h2 {
+  @include font(32px, 600, 46px);
+  color: $headingColor; 
+}
+
+h2 {
+  @include font(22px, 600, 35px);
+  color: $headingColor; 
 }

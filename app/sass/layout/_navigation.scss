@@ -1,0 +1,57 @@
+.nav-opener {
+  position: absolute;
+  top: 44px;
+  right: 65px;
+  width: 28px;
+  height: 20px;
+  border-radius: 0px;
+  background: transparent;
+
+  &:before,
+  &:after,
+  span {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 3px;
+    border-radius: 0px;
+    background: $headingColor;
+    @include transition(all, 0.3s);
+  }
+
+  &:before {
+    content: '';
+    top: 9px;
+  }
+
+  &:after {
+    content: '';
+    top: 18px;
+  }
+
+}
+
+.search-form {
+  position: relative;
+
+  input {
+    width: 100%;
+    padding: 12px 0 0 72px;
+    border: 0;
+    background: $bkgrColor;
+    
+    &::-webkit-input-placeholder,
+    &::-moz-placeholder,
+    &:-ms-input-placeholder,
+    &:-moz-placeholder {
+      color: red;
+    }
+    
+  }
+
+  button {
+    position: absolute;
+    top: 0;
+  }
+}
