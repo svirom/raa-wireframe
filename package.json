@@ -1,0 +1,25 @@
+{
+  "name": "raa-wireframe",
+  "version": "1.0.0",
+  "description": "test work for slicing design",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@bitbucket.org/romanjuk/raa-wireframe.git"
+  },
+  "author": "SviRom",
+  "license": "ISC",
+  "homepage": "https://bitbucket.org/romanjuk/raa-wireframe#readme",
+  "dependencies": {
+    "npm": "^6.10.3"
+  },
+  "devDependencies": {
+    "browser-sync": "^2.26.7",
+    "gulp": "^4.0.2",
+    "gulp-sass": "^4.0.2",
+    "gulp-sourcemaps": "^2.6.5"
+  }
+}
