@@ -26,10 +26,8 @@ $(document).ready(function() {
     }
   });
 
-  // slick slider
-  $('.main-slider').slick({
-    centerMode: true
-  });
+  // bxSlider slider
+  $('.main-slider').bxSlider();
 
 
 });
