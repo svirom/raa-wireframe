@@ -2,3 +2,8 @@
   max-width: $maxWidth;
   margin: 0 auto;
 }
+
+.container_inner {
+  max-width: $contentWidth;
+  margin: 0 auto;
+}

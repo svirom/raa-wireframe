@@ -46,16 +46,79 @@
     }
   }
 
-}
+  @include respond-to('large') {
+    display: none;
+  }
 
-.main-nav {
+}
+.main-nav-wrapper {
   position: absolute;
   width: 100%;
+  height: 100%;
+}
+.main-nav {
+  // position: absolute;
+  width: 100%;
   padding-bottom: 24px;
+
   @include transition(all, 0.3s);
 
   .nav {
     display: none;
+    padding-top: 12px;
+
+    .nav-link {
+      text-align: center;
+    
+      a {
+        display: block;
+        padding: 12px 0;
+
+        @include font(18px, 500);
+
+        @include on-event {
+          color: $secondaryColor;
+        }
+
+        @include respond-to('large') {
+          padding: 12px;
+          font-size: 15px;
+        }
+      }
+
+      @include respond-to('large') {
+        margin: 0 3px;
+      }
+
+      @include respond-to('extralarge') {
+        margin: 0 12px;
+      }
+
+      &:first-of-type {
+        @include respond-to('large') {
+          margin-left: 0;
+        }
+      }
+
+      &:last-of-type {
+        @include respond-to('large') {
+          margin-right: 0;
+        }
+      }
+    }
+
+    @include respond-to('large') {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100%;
+      padding-top: 0;
+    }
+  }
+
+  @include respond-to('large') {
+    height: 100%;
+    padding-bottom: 0;
   }
   
 }
@@ -63,6 +126,10 @@
 .search-form {
   display: none;
   position: relative;
+
+  @include respond-to('large') {
+    display: none;
+  }
 
   input {
     width: 100%;
@@ -94,23 +161,20 @@
   }
 }
 
-.nav {
-  padding-top: 12px;
-
-  .nav-link {
-    text-align: center;
-  
-    a {
-      display: block;
-      padding: 12px 0;
-      font-size: 18px;
-    }
-  }
-
-}
-
 .member-login {
   display: none;
-  padding: 30px 0;
+  padding: 36px 0 72px;
   text-align: center;
+
+  @include respond-to('large') {
+    display: block;
+    position: absolute;
+    top: 10px;
+    right: 30px;
+    padding: 0;
+  }
+
+  @include respond-to('extralarge') {
+    top: 35px;
+  }
 }

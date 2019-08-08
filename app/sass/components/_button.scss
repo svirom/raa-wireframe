@@ -2,11 +2,58 @@
 // This file contains all styles related to the button component.
 // -----------------------------------------------------------------------------
 
-.login-button {
+.button {
   display: inline-block;
   padding: 18px 64px;
   font-size: 18px;
   color: #ffffff;
   border-radius: 30px;
-  background: $linkColor;
+  
+  &.login-button {
+    background: $linkColor;
+  }
+
+  &.complaint-button {
+    display: none;
+    color: #ffffff;
+    border: 1px solid $headingColor;
+    background: $headingColor;
+  }
+
+  @include respond-to('large') {
+    padding: 10px 16px;
+    font-size: 14px;
+
+    &.login-button {
+      display: block;
+      color: $headingColor;
+      border: 1px solid $headingColor;
+      background: #ffffff;
+    }
+
+    &.complaint-button {
+      display: block;
+      margin-bottom: 10px;
+    }
+
+    @include on-event {
+      color: $secondaryColor;
+    }
+  }
+
+  @include respond-to('extralarge') {
+    padding: 10px 20px;
+    font-size: 15px;
+
+    &.login-button {
+      display: inline-block;
+    }
+
+    &.complaint-button {
+      display: inline-block;
+      margin-bottom: 0;
+      margin-right: 10px;
+    }
+
+  }
 }

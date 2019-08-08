@@ -18,6 +18,7 @@ $bkgrColor: #F5F7F8;
 
 /// Container's maximum width
 $maxWidth: 1920px !default;
+$contentWidth: 1600px;
 
 
 
@@ -27,9 +28,10 @@ $maxWidth: 1920px !default;
 /// @prop {String} keys - Keys are identifiers mapped to a given length
 /// @prop {Map} values - Values are actual breakpoints expressed in pixels
 $breakpoints: (
-  'small': 320px,
-  'medium': 768px,
-  'large': 1024px,
+  'small': (min-width: 768px),
+  'medium': (min-width: 1024px),
+  'large': (min-width: 1200px),
+  'extralarge': (min-width: 1600px)
 ) !default;
 
 
