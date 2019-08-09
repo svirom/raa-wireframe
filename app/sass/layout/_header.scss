@@ -3,6 +3,7 @@
 // -----------------------------------------------------------------------------
 .header-inner {
   position: relative;
+  z-index: 99;
 
   @include respond-to('large') {
     height: 112px;;

@@ -10,7 +10,7 @@
 <body>
 
 	<header class="main_container">
-		<section class="content_inner header-inner">
+		<section class="container_inner header-inner">
 			<div class="logo">
 				<a href="#"><img src="img/logo_main.png" alt="Logo"></a>
 			</div>
@@ -21,7 +21,7 @@
 					<button type="submit" value=""><img src="img/search_icon.png" alt="Search Button"></button>
 				</form>
 			</div>
-			<div class="main-nav-wrapper">
+			<!-- <div class="main-nav-wrapper"> -->
 				<nav class="main-nav">
 					<ul class="nav">
 						<li class="nav-link active"><a href="#">Home</a></li>
@@ -32,27 +32,60 @@
 						<li class="nav-link"><a href="#">Complaints</a></li>
 						<li class="nav-link"><a href="#">Contact us</a></li>
 					</ul>
+					<div class="member-login">
+						<a href="#" class="button complaint-button">Make a complaint</a>
+						<a href="#" class="button login-button">Member login</a>
+					</div>
 				</nav>
-				<div class="member-login">
-					<a href="#" class="button complaint-button">Make a complaint</a>
-					<a href="#" class="button login-button">Member login</a>
-				</div>
-			</div>
 		</section>
 	</header>
 
 	<main class="main_container">
+
+		<!-- Main Slider -->
 		<section class="main-slider">
-			<div style="background: grey">My Content</div>
-			<div style="background: blue">My Content</div>
-			<div style="background: red">My Content</div>
+			<div class="main-slide slide-1">
+				<div class="slide-bkgr"></div>
+				<h2>Responsible Alcohol Authority is the social responsibility body for alcohol producer in the UK</h2>
+			</div>
+			<div class="main-slide slide-1">
+				<div class="slide-bkgr"></div>
+				<h2>Slider 2</h2>
+			</div>
+			<div class="main-slide slide-1">
+				<div class="slide-bkgr"></div>
+				<h2>Slider 3</h2>
+			</div>
+		</section>
+
+		<section class="container_inner main-content">
+			<div class="main-links">
+				<div class="main-link-wrapper">
+					<a href="#">Codes & Advice</a>
+				</div>
+				<div class="main-link-wrapper">
+						<a href="#">Independant Complaints Panel</a>
+				</div>
+				<div class="main-link-wrapper">
+						<a href="#">Make a Complaint</a>
+				</div>
+				<div class="main-link-wrapper">
+						<a href="#">Policy & Research</a>
+				</div>
+				<div class="main-link-wrapper">
+						<a href="#">Advice & Training</a>
+				</div>
+				<div class="main-link-wrapper">
+						<a href="#">Media Centre</a>
+				</div>
+			</div>
 		</section>
 	</main>
 
 
 
 	<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+  <script src="js/jquery.bxslider.min.js"></script>
   <script src="js/custom.js"> </script>
 </body>
 </html>

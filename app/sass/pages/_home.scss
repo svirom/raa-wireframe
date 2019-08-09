@@ -1,3 +1,20 @@
 // -----------------------------------------------------------------------------
 // This file contains styles that are specific to the home page.
 // -----------------------------------------------------------------------------
+.main-content {
+  padding: 15px 30px;
+
+  .main-links {
+    border:0;
+
+    .main-link-wrapper {
+      padding-bottom: 58.5%;
+
+      @for $i from 1 through 6 {
+        &:nth-of-type(#{$i})	{
+          background: url('../img/img_main-link#{$i}.jpg') center/cover no-repeat;
+        }
+      }
+    }
+  }
+}
