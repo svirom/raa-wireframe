@@ -53,7 +53,7 @@
   }
 }
 
-@mixin font($size, $weight, $lineHeight: 1.4) {
+@mixin font($size, $weight: 400, $lineHeight: 1.4) {
 	font-size: $size;
 	font-weight: $weight;
 	line-height: $lineHeight;

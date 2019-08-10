@@ -17,3 +17,12 @@
   background: rgba(#005360, 0.72);
   z-index: -1;
 }
+
+.main-category-bkgr {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  background: rgba($linkColor, 0.46);
+}
