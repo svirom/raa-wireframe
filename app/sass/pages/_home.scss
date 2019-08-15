@@ -16,7 +16,7 @@
 
     .main-category-wrapper {
       margin-bottom: 10px;
-      overflow: hidden;
+      // overflow: hidden;
 
       @include respond-to('small') {
         flex-basis: 50%;
@@ -38,6 +38,7 @@
       .main-category {
         position: relative;
         padding-bottom: 58.5%;
+        overflow: hidden;
       }
 
       a {

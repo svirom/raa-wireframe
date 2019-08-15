@@ -710,7 +710,6 @@ ul.bxslider {
 
 .main-content .main-categories .main-category-wrapper {
   margin-bottom: 10px;
-  overflow: hidden;
 }
 
 @media (min-width: 768px) {
@@ -753,6 +752,7 @@ ul.bxslider {
 .main-content .main-categories .main-category-wrapper .main-category {
   position: relative;
   padding-bottom: 58.5%;
+  overflow: hidden;
 }
 
 .main-content .main-categories .main-category-wrapper a {
